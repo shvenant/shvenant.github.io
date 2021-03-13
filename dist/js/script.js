@@ -1,48 +1,10 @@
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlide() {
-	showSlides(slideIndex += 1);
-}
-
-function minusSlide() {
-	showSlides(slideIndex -= 1);
-}
-
-function currentSlide(n) {
-	showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-	let i;
-	let slides = document.getElementsByClassName("item");
-	let dots = document.getElementsByClassName("slider-dots_item");
-	if (n > slides.length) {
-		slideIndex = 1;
-	}
-	if (n < 1) {
-		slideIndex = slides.length;
-	}
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = ("none");
-	}
-	for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" active", "");
-	}
-	slides[slideIndex - 1].style.display = "block";
-	dots[slideIndex - 1].className += " active";
-}
-
-
-
-
-
+// Табы
 let tabNavs = document.querySelectorAll(".pawnshop__list");
 let tabPanes = document.querySelectorAll(".pawnshop__specif");
 
 for (let i = 0; i < tabNavs.length; i++) {
 
-	tabNavs[i].addEventListener("click", function(e) {
+	tabNavs[i].addEventListener("click", function (e) {
 		e.preventDefault();
 		let activeTabAttr = e.target.getAttribute("data-tab");
 
@@ -60,6 +22,7 @@ for (let i = 0; i < tabNavs.length; i++) {
 	});
 }
 
+// Гамбургер
 window.addEventListener("DOMContentLoaded", () => {
 	const menu = document.querySelector(".header__nav"),
 		menuItem = document.querySelectorAll(".menu__link"),
@@ -78,3 +41,55 @@ window.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 });
+
+// Плавная прокрутка к якорю
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+	anchor.addEventListener('click', function (e) {
+		e.preventDefault();
+
+		const blockID = anchor.getAttribute('href').substr(1);
+
+		document.getElementById(blockID).scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		});
+	});
+}
+
+
+// Кнопка показать больше
+let btnMore = document.querySelector(".btn__more");
+let more = document.querySelector(".services__wrapper_more");
+
+btnMore.addEventListener("click", function () {
+	if (more.classList.contains("more")) {
+		btnMore.innerHTML = "Смотреть еще";
+		more.classList.remove('more');
+
+	} else {
+		btnMore.innerHTML = "Скрыть";
+		more.classList.add('more');
+	}
+});
+
+// Ссылка показать больше
+let linkPlus = document.querySelector(".stages__link");
+let plus = document.querySelector(".stages__descr_plus");
+
+linkPlus.addEventListener("click", function () {
+	if (plus.classList.contains("plus")) {
+		linkPlus.innerHTML = "Прочитать больше";
+		plus.classList.remove('plus');
+
+	} else {
+		linkPlus.innerHTML = "Скрыть";
+		plus.classList.add('plus');
+	}
+});
+
+
+
+
+
