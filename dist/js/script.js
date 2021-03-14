@@ -91,5 +91,17 @@ linkPlus.addEventListener("click", function () {
 
 
 
+let channelsLink = document.querySelectorAll(".channels__link");
+for (let i = 0; i < channelsLink.length; i++) {
+	channelsLink[i].addEventListener("click", function () {
+		var channelsTextMore = this.nextElementSibling;
+		if (channelsTextMore.classList.contains("channels_more")) {
+			this.innerHTML = "Прочитать больше";
+			channelsTextMore.classList.remove('channels_more');
 
-
+		} else {
+			this.innerHTML = "Скрыть";
+			channelsTextMore.classList.add('channels_more');
+		}
+	});
+}
