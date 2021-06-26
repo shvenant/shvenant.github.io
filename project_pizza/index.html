@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pizza</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@300&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<!-- HEADER-PAGE -->
+	<header class="header-page" id="header-page">
+		<div class="container header-page__container">
+			<div class="header-page__start">
+				<div class="logo">
+					<a href="#" class="logo__link">
+						<img src="img/common/logo.svg" alt="PizzaTime" class="logo__img" width="127" height="21">
+					</a>
+				</div>
+			</div>
+			<div class="header-page__end">
+				<nav class="header-page__nav">
+					<ul class="header-page__list">
+						<li class="header-page__item">
+							<a href="#" class="header-page__link" data-scroll-to="catalog">
+								<span class="header-page__text">пицца</span>
+							</a>
+						</li>
+						<li class="header-page__item">
+							<a href="#" class="header-page__link" data-scroll-to="about">
+								<span class="header-page__text">о нас</span>
+							</a>
+						</li>
+						<li class="header-page__item">
+							<a href="#" class="header-page__link" data-scroll-to="contacts">
+								<span class="header-page__text">контакты</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="phone">
+					<a href="tel:+79999999999" class="phone__item">+7 (999) 999-99-99</a>
+				</div>
+				<div class="header-page__hamburger">
+					<button class="btn-menu" type="button" data-modal="modal-menu">
+						<span class="btn-menu__box">
+							<span class="btn-menu__inner"></span>
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER-PAGE -->
+	<!-- --------------------------------------------------------------- -->
+	<!-- SECTION-TOP -->
+	<section class="section-top" id="section-top">
+		<div class="container section-top__container">
+			<div class="section-top__info">от итальянского повара</div>
+			<h1 class="section-top__title">Лучшая пицца в Москве</h1>
+			<div class="section-top__btn">
+				<button class="btn" type="button" data-scroll-to="catalog">Выбрать</button>
+			</div>
+		</div>
+	</section>
+	<!-- SECTION-TOP -->
+	<!-- --------------------------------------------------------------- -->
+	<!-- SECTION-CATALOG -->
+	<section class="catalog" id="catalog">
+		<div class="container">
+			<div class="catalog__header">
+				<h2 class="title">Меню</h2>
+				<nav class="catalog__nav">
+					<ul class="catalog__nav-wrapper">
+						<li class="catalog__nav-item">
+							<button class="catalog__nav-btn is-active" type="button" data-filter="all">все</button>
+						</li>
+						<li class="catalog__nav-item">
+							<button class="catalog__nav-btn" type="button" data-filter="mushrooms">грибные</button>
+						</li>
+						<li class="catalog__nav-item">
+							<button class="catalog__nav-btn" type="button" data-filter="meat">мясные</button>
+						</li>
+						<li class="catalog__nav-item">
+							<button class="catalog__nav-btn" type="button" data-filter="cheese">сырные</button>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="catalog__product product">
+				<div class="catalog__wrapper" data-category="meat">
+					<div class="catalog__item">
+						<img src="img/section-catalog/1.png" alt="Pizza" class="catalog__img">
+						<div class="catalog__content">
+							<h3 class="catalog__title">Салями</h3>
+							<div class="catalog__descr">Салями, картофель и морковь, огурцы маринованные, моцарелла
+								цыпленок, ветчина и французский соус</div>
+						</div>
+						<div class="catalog__footer">
+							<div class="catalog__sizes">
+								<button class="catalog__size is-active" type="button">35см</button>
+								<button class="catalog__size" type="button">30см</button>
+								<button class="catalog__size" type="button">25см</button>
+							</div>
+							<div class="catalog__bottom">
+								<div class="catalog__price">
+									<span class="catalog__price-value">850</span>
+									<span class="catalog__currency">&#8381;</span>
+								</div>
+								<button class="btn catalog__btn" type="button" data-modal="modal-order">заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__wrapper" data-category="meat">
+					<div class="catalog__item">
+						<img src="img/section-catalog/2.png" alt="Pizza" class="catalog__img">
+						<div class="catalog__content">
+							<h3 class="catalog__title">Хит</h3>
+							<div class="catalog__descr">Картофель и морковь, огурцы
+								маринованные, моцарелла, цыпленок,
+								ветчина и французский соус</div>
+						</div>
+						<div class="catalog__footer">
+							<div class="catalog__sizes">
+								<button class="catalog__size is-active" type="button">35см</button>
+								<button class="catalog__size" type="button">30см</button>
+								<button class="catalog__size" type="button">25см</button>
+							</div>
+							<div class="catalog__bottom">
+								<div class="catalog__price">
+									<span class="catalog__price-value">950</span>
+									<span class="catalog__currency">&#8381;</span>
+								</div>
+								<button class="btn catalog__btn" type="button" data-modal="modal-order">заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__wrapper" data-category="mushrooms">
+					<div class="catalog__item">
+						<img src="img/section-catalog/3.png" alt="Pizza" class="catalog__img">
+						<div class="catalog__content">
+							<h3 class="catalog__title">Ветчина-грибы</h3>
+							<div class="catalog__descr">Салями, картофель и морковь, огурцы
+								маринованные, моцарелла, цыпленок,
+								ветчина и французский соус</div>
+						</div>
+						<div class="catalog__footer">
+							<div class="catalog__sizes">
+								<button class="catalog__size is-active" type="button">35см</button>
+								<button class="catalog__size" type="button">30см</button>
+								<button class="catalog__size" type="button">25см</button>
+							</div>
+							<div class="catalog__bottom">
+								<div class="catalog__price">
+									<span class="catalog__price-value">880</span>
+									<span class="catalog__currency">&#8381;</span>
+								</div>
+								<button class="btn catalog__btn" type="button" data-modal="modal-order">заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__wrapper" data-category="meat">
+					<div class="catalog__item">
+						<img src="img/section-catalog/4.png" alt="Pizza" class="catalog__img">
+						<div class="catalog__content">
+							<h3 class="catalog__title">Карбонара</h3>
+							<div class="catalog__descr">Салями, курица, моцарелла, говядина,
+								ветчина и французский соус
+							</div>
+						</div>
+						<div class="catalog__footer">
+							<div class="catalog__sizes">
+								<button class="catalog__size is-active" type="button">35см</button>
+								<button class="catalog__size" type="button">30см</button>
+								<button class="catalog__size" type="button">25см</button>
+							</div>
+							<div class="catalog__bottom">
+								<div class="catalog__price">
+									<span class="catalog__price-value">1250</span>
+									<span class="catalog__currency">&#8381;</span>
+								</div>
+								<button class="btn catalog__btn" type="button" data-modal="modal-order">заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__wrapper" data-category="cheese">
+					<div class="catalog__item">
+						<img src="img/section-catalog/5.png" alt="Pizza" class="catalog__img">
+						<div class="catalog__content">
+							<h3 class="catalog__title">Фирменная</h3>
+							<div class="catalog__descr">Томатно-сливочный соус, бекон, моцарелла</div>
+						</div>
+						<div class="catalog__footer">
+							<div class="catalog__sizes">
+								<button class="catalog__size is-active" type="button">35см</button>
+								<button class="catalog__size" type="button">30см</button>
+								<button class="catalog__size" type="button">25см</button>
+							</div>
+							<div class="catalog__bottom">
+								<div class="catalog__price">
+									<span class="catalog__price-value">920</span>
+									<span class="catalog__currency">&#8381;</span>
+								</div>
+								<button class="btn catalog__btn" type="button" data-modal="modal-order">заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__wrapper" data-category="mushrooms">
+					<div class="catalog__item">
+						<img src="img/section-catalog/6.png" alt="Pizza" class="catalog__img">
+						<div class="catalog__content">
+							<h3 class="catalog__title">Ассорти</h3>
+							<div class="catalog__descr">Картофель моцарелла, цыпленок, грибы,
+								ветчина и французский соус</div>
+						</div>
+						<div class="catalog__footer">
+							<div class="catalog__sizes">
+								<button class="catalog__size is-active" type="button">35см</button>
+								<button class="catalog__size" type="button">30см</button>
+								<button class="catalog__size" type="button">25см</button>
+							</div>
+							<div class="catalog__bottom">
+								<div class="catalog__price">
+									<span class="catalog__price-value">920</span>
+									<span class="catalog__currency">&#8381;</span>
+								</div>
+								<button class="btn catalog__btn" type="button" data-modal="modal-order">заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__wrapper" data-category="cheese">
+					<div class="catalog__item">
+						<img src="img/section-catalog/7.png" alt="Pizza" class="catalog__img">
+						<div class="catalog__content">
+							<h3 class="catalog__title">Л-01</h3>
+							<div class="catalog__descr">Томаты, моцарелла, цыпленок,
+								ветчина и французский соус, секректный ингредиент</div>
+						</div>
+						<div class="catalog__footer">
+							<div class="catalog__sizes">
+								<button class="catalog__size is-active" type="button">35см</button>
+								<button class="catalog__size" type="button">30см</button>
+								<button class="catalog__size" type="button">25см</button>
+							</div>
+							<div class="catalog__bottom">
+								<div class="catalog__price">
+									<span class="catalog__price-value">920</span>
+									<span class="catalog__currency">&#8381;</span>
+								</div>
+								<button class="btn catalog__btn" type="button" data-modal="modal-order">заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__wrapper" data-category="cheese">
+					<div class="catalog__item">
+						<img src="img/section-catalog/8.png" alt="Pizza" class="catalog__img">
+						<div class="catalog__content">
+							<h3 class="catalog__title">Три сыра</h3>
+							<div class="catalog__descr">Чеддер, камамбер, эдам</div>
+						</div>
+						<div class="catalog__footer">
+							<div class="catalog__sizes">
+								<button class="catalog__size is-active" type="button">35см</button>
+								<button class="catalog__size" type="button">30см</button>
+								<button class="catalog__size" type="button">25см</button>
+							</div>
+							<div class="catalog__bottom">
+								<div class="catalog__price">
+									<span class="catalog__price-value">990</span>
+									<span class="catalog__currency">&#8381;</span>
+								</div>
+								<button class="btn catalog__btn" type="button" data-modal="modal-order">заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__wrapper" data-category="meat">
+					<div class="catalog__item">
+						<img src="img/section-catalog/9.png" alt="Pizza" class="catalog__img">
+						<div class="catalog__content">
+							<h3 class="catalog__title">Мясная</h3>
+							<div class="catalog__descr">Курица, говядина, сливочный соус, салями,
+								огурцы маринованные, томаты, грибы,
+								бекон
+							</div>
+						</div>
+						<div class="catalog__footer">
+							<div class="catalog__sizes">
+								<button class="catalog__size is-active" type="button">35см</button>
+								<button class="catalog__size" type="button">30см</button>
+								<button class="catalog__size" type="button">25см</button>
+							</div>
+							<div class="catalog__bottom">
+								<div class="catalog__price">
+									<span class="catalog__price-value">950</span>
+									<span class="catalog__currency">&#8381;</span>
+								</div>
+								<button class="btn catalog__btn" type="button" data-modal="modal-order">заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- SECTION-CATALOG -->
+	<!-- --------------------------------------------------------------- -->
+	<!-- SECTION-ABOUT -->
+	<section class="about" id="about">
+		<img src="img/section-about/bg.jpg" alt="pizza" class="about__img">
+		<div class="container about__container">
+			<div class="about__content">
+				<h2 class="title about__title">О нас</h2>
+				<p class="about__descr">
+					Доставим вам горячую пиццу менее чем за час или пицца бесплатно. Мы готовим пиццу только из свежих
+					продуктов. Каждый день мы покупаем свежие овощи, грибы и мясо.
+				</p>
+			</div>
+		</div>
+	</section>
+	<!-- SECTION-ABOUT -->
+	<!-- --------------------------------------------------------------- -->
+	<!-- SECTION-CONTACTS -->
+	<section class="contacts" id="contacts">
+		<div class="container contacts__container">
+			<div class="contacts__header">
+				<h2 class="title contacts__title">Контакты</h2>
+			</div>
+			<div class="contacts__main">
+				<div class="contacts__start">
+					<div class="contacts__map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.9053175024096!2d37.710615315932124!3d55.79488198056464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b535093ad7d72b%3A0x15c200dbca057794!2z0J_RgNC10L7QsdGA0LDQttC10L3RgdC60LDRjyDQv9C7LiwgOCwg0JzQvtGB0LrQstCwLCDQoNC-0YHRltGPLCAxMDcwNjE!5e0!3m2!1suk!2sua!4v1610888858854!5m2!1suk!2sua"
+							frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</div>
+				<div class="contacts__end">
+					<div class="contacts__item">
+						<h3 class="contacts__heading">Адрес</h3>
+						<p class="contacts__descr">г. Москва, Преображенская площадь, 8</p>
+					</div>
+					<div class="contacts__item">
+						<h3 class="contacts__heading">Телефон</h3>
+						<p class="contacts__descr">
+							<a href="tel:+79117112123" class="contacts__phone">+7 (911) 711-21-23</a>
+						</p>
+					</div>
+					<div class="contacts__item">
+						<h3 class="contacts__heading">Социальные сети</h3>
+						<ul class="social">
+							<li class="social__item">
+								<a href="#" class="social__link" target="_blank">
+									<svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+										<image id="vk" width="35" height="35"
+											xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAADfUlEQVRYhb2YXUgUURTHfzu6yqZ9WOJH0QeFRkhJob0EPRkkFPhWhC+BUBaB9hZBhGA9RCkk2ktEIJtK9BAYPZWFiSH0bcRGH2qhhWVatMqqG7e54+7cmVlnddff08zcc8/5751zzz2znrC/ggWQB5QChUA24AOCwCgQAPqAkXjdpsZhmw8cBY4ARS7s+wE/cAMYdhNAc2EjfnkzMADUuxSCtKuX85qln0WJOSSXvRrwuhSh4pXzA9Jf3GI8QAPQBmQtUIRKlvTXIP27EiMMW4GaBIlQEX5b7QTZibkikzSZHJFxYoo5lMQVUalRcyhajMj2liUSYtASvcuixdQlMFndkiXjmsSIgla1xEIMqmT8OTFHF1FHFotXxp87Dqy7Z+V6SPVBShoQhp8fYHpSH8srhoJySMuEFC9MT8HIC3h7x+wjIwfSMiL34TBMDMHsjBpNxL+QKg89c4n3+qC8ETxRKTXyEh6e16+nfkNmLqzaFBnP3Q7v7sLstH6fmQcHmsCTYg7bVQfDz1UxIn6eJk9fM6EgDPaYn4nVyNqsX499hPf3rW/HECLYVmEVEhyD72+s83RKNdkGWOnv0F9PNMWVkZvJX05O9VXbXGZ9/uw6zIScZhVqjqfp+BAMPjE/y98J60qcRRjsqgJNWZXPj6z+zGRrsjGy53UbhJVkKzkO6SvAZ1OSNC9sKbMKnvgCfdfm+wm+VNmh2TPxFQL3YOvByPCyNbDvojm5Dfaegdwd5mezIei+FNmJzgQ12So6I1Yn+MM8vHytvltUxGtUX89oAMYH5xPy31KTTY8zob/Qe9WNM3tyiqBgvxvLgCab59iIGtN/e+GCSo65EdSnyS6+f16Hr/zw8UFsmxc3oafBrsLqgjbscZop4o8YWeifV4yoOU+b4PUt6w4z+NQFA4+ht9F+fPdJ+10o4xtixOeEYzUyCXrTAZ2nINCp77awLIx/vsHkuH490A09l/WKG43HA77VqtOQjE/0R1yz7OITS0o6zEzFshAN1gmU5uqcOHUSLia2kDEZF1XMaFJWJjbV0XVOLaPtgEP2JZxGGW8Ou0+V0+5216Lwyzgm7MSI7VGZxBUSfiut/Ynz560wrAUOJzCpx6S/WjshscQYtMvmq8VdHbIlJOcXqjkSrxiByHZRBzYCZ10dHTrCTtiLeWJ+7O5AKXrxkPh/roB/J+zjpgzIAncAAAAASUVORK5CYII=" />
+									</svg>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link" target="_blank">
+									<svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+										<image id="facebook" width="35" height="35"
+											xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAACh0lEQVRYhdWYy2sTURSHvxmmj1h80FI3RRDE4MKNFEW6sEKLRARJcCFk35WrugtYyEazEfIHdJ+dJAsXRegiBbMQihtX3ehGQSOK1Vqb2hm5nTNJZjI2d8Y86g8GcmfuvefLfZ1zrkFEOaX0KDAHzAJJYBpQ7xpAHdgCNoGaka00ovSuDeOU0jeAJSADTGg02QHKwKqRrWz0BMYppa8ARWBeizpcVWDZyFZex4JxSmkLyAM5wPwHEE82UFB9GtnKb20Yp5Q+DTwDFnoAEdQ6cM/IVr51hRGQF8C1PoB4egXcCgL5YGRq1mKNiGmBNdYq7/8C5+CoFmqEUu1TZgUq5COBjJ2Ey/fh3HVITAVMrcCnN0e1XhB7j5r/x/shuyanDTJyAhYLkLzTCaKvnNj1w8j21d81l+7CqZm4EO32iz4YOdCinSMzVzvf7W3DTt19bO3Dd17sN9fMUiQQpYmz/vKPj/D8QbdF+zcp+xum+JpM5OZGYEZ/fo4LopRRHKY4PR1f008p+3OWeF89JSbh5opb1Ur4m0xegNvFVvnlU9h+H4V/1pIwQE/qYDtzPryqNe7/tr8bdSCTpsQjvddeh+vppmlTAqPeSm1xO/JiHrUkQtPT7hdYe+hWXXziTo2n7x/cdaJkh0YI3dSwJFTUkzLy9a1b1bH9TQ4arW/xVDclZj0O2jIleD4O2lQwNQmehyllv2ZKOlEeMkxZcXgOZnXIMIf2D2Ekr6kOCaTq5VXtrndZ0olByha7+GAkwSoMGKbQntgFw8y8RO2D0LrYayp+3nQxBeZIq6wc4zutlBqtvCkANPCMMjQbkIop4HEPF7Ut/aXCQPhvbiFCoIZ/PxMC1Z+bK+AP7xbM56pwpVoAAAAASUVORK5CYII=" />
+									</svg>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link" target="_blank">
+									<svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+										<image id="instagram" width="35" height="35"
+											xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAADm0lEQVRYhdWYUWjXVRTHP79//14yYyNyCZPKbBQyxIYiLNgWCI4E71PE7yEoGAxTfFHYg/RiD2L2IGUIox58uPgi+wkOih5WkAqOirJexlqLoplGWyIuUHfljPPT3+5+d/vdzT/U9+XCPeee+/2de+455/4SIuGs6QB6gG1AG9AMNAEzwDQwBowCI0mafRNjvRIZZ83jwF6gD9gUYX8cGAQ+TtLs5qrIOGseAfqB9/TrVwrx2mHgVJJmd6PJOGtagTNA5ypI+LgAvJGk2e+VyThrtgKfAeseIpEc14BdSZp9tywZJfIl8EQDiOS4AXT7hBaQ0aORG9AIj/gQD3UUj+w+GQ3WrwIxIgtPAF8A1yM2fArYCRwIHLnEUFce1PWCoD9A5GtgT5Jmf0eQyDEpOcdZcwo4B7ziyTt135PkntE88lvJ9Z0CNidpNu2seRZ4B3geqFUgMgf8LBslaTbprJHk+BOw3tOTa79B8lDumb2BPHJciWwELgNPRnjlT+Bl4C1nzfYkzSacNceBDzy9Jt3/WP6FfQGDn+t4MJLIP8CLWi7+0vVFez7m969rrQml+CkdXyiR3QFOA+dVT9y/G3izRDdfP1UiE2wSHnUteiHM6fyjnlyu42tJmv3gzQ85a+TWDWvB/FfiAbiq8jnC6Klr9Y3BbaA3SbMfnTWPAW/rccjmnwpBZ00v8G3JRyyFbTU1FINPlMga4CLwIbBfx4syL3LRi7TbVtN+JAZDqiv5YYu3bovOU9CriubaClqDP3RsD8jbPb2qaKpp0olBi+qOBdbk8y1xZpmpaasYg17VlRQ/4a2b0HkKelUxXVviC0Pod9Y8p7VqB3AEOKvd4A6ZF3khdqpirK7N8+sRi+QWDcv1TdLsV+DdotBZ84zmmTWRZEaFzEgFRb9vfQm44qw5qdVYktrTUt21mK5dZn0ZRmr6nBgPKORB6McGuuEAcAn4RceBEiLF9aGgHhceeaEcDCi9qqOk+NkKX1eGWV1ftOdjfv/l+hn5ovYkzW45ayShHQJaI4hIDXs/SbPvtXRcATZ6Ovf7mWLbKWf9UYlBiYlUCMU55AGUiNWY8rEvSbMHnR7L98By/Y9qDzy11EPMs7dee+CBQA1c0AP/p14HC3pZFezSd00jcUMfcgtelosaa31YdSvzRnlk0QOulEyBUIee6cPEBT2aRUSCZJSQuLBLon0Fld3HjNrpCj36+V/9nwkQa8yfK+Ae3B0zTdbguBcAAAAASUVORK5CYII=" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- SECTION-CONTACTS -->
+	<!-- --------------------------------------------------------------- -->
+	<!-- FOOTER-PAGE -->
+	<footer class="footer-page" id="footer-page">
+		<div class="container">
+			<div class="footer-page__text">
+				PizzaTime 2020
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER-PAGE -->
+	<!-- --------------------------------------------------------------- -->
+	<!-- MODAL MENU -->
+	<div class="modal modal-menu">
+		<div class="modal__wrapper">
+			<div class="modal__content modal__content--fluid">
+				<button class="btn-close modal__btn-close"></button>
+				<nav class="mobile-menu">
+					<ul class="mobile-menu__ul">
+						<li class="mobile-menu__li">
+							<a href="#" class="mobile-menu__link modal-close" data-scroll-to="catalog">Пицца</a>
+						</li>
+						<li class="mobile-menu__li">
+							<a href="#" class="mobile-menu__link modal-close" data-scroll-to="about">О нас</a>
+						</li>
+						<li class="mobile-menu__li">
+							<a href="#" class="mobile-menu__link modal-close" data-scroll-to="contacts">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="phone modal-phone">
+					<a href="tel:+79999999999" class="phone__item modal-phone__item">+7 (999) 999-99-99</a>
+				</div>
+				<ul class="social">
+					<li class="social__item">
+						<a href="#" class="social__link" target="_blank">
+							<svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+								<image id="vk" width="35" height="35"
+									xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAADfUlEQVRYhb2YXUgUURTHfzu6yqZ9WOJH0QeFRkhJob0EPRkkFPhWhC+BUBaB9hZBhGA9RCkk2ktEIJtK9BAYPZWFiSH0bcRGH2qhhWVatMqqG7e54+7cmVlnddff08zcc8/5751zzz2znrC/ggWQB5QChUA24AOCwCgQAPqAkXjdpsZhmw8cBY4ARS7s+wE/cAMYdhNAc2EjfnkzMADUuxSCtKuX85qln0WJOSSXvRrwuhSh4pXzA9Jf3GI8QAPQBmQtUIRKlvTXIP27EiMMW4GaBIlQEX5b7QTZibkikzSZHJFxYoo5lMQVUalRcyhajMj2liUSYtASvcuixdQlMFndkiXjmsSIgla1xEIMqmT8OTFHF1FHFotXxp87Dqy7Z+V6SPVBShoQhp8fYHpSH8srhoJySMuEFC9MT8HIC3h7x+wjIwfSMiL34TBMDMHsjBpNxL+QKg89c4n3+qC8ETxRKTXyEh6e16+nfkNmLqzaFBnP3Q7v7sLstH6fmQcHmsCTYg7bVQfDz1UxIn6eJk9fM6EgDPaYn4nVyNqsX499hPf3rW/HECLYVmEVEhyD72+s83RKNdkGWOnv0F9PNMWVkZvJX05O9VXbXGZ9/uw6zIScZhVqjqfp+BAMPjE/y98J60qcRRjsqgJNWZXPj6z+zGRrsjGy53UbhJVkKzkO6SvAZ1OSNC9sKbMKnvgCfdfm+wm+VNmh2TPxFQL3YOvByPCyNbDvojm5Dfaegdwd5mezIei+FNmJzgQ12So6I1Yn+MM8vHytvltUxGtUX89oAMYH5xPy31KTTY8zob/Qe9WNM3tyiqBgvxvLgCab59iIGtN/e+GCSo65EdSnyS6+f16Hr/zw8UFsmxc3oafBrsLqgjbscZop4o8YWeifV4yoOU+b4PUt6w4z+NQFA4+ht9F+fPdJ+10o4xtixOeEYzUyCXrTAZ2nINCp77awLIx/vsHkuH490A09l/WKG43HA77VqtOQjE/0R1yz7OITS0o6zEzFshAN1gmU5uqcOHUSLia2kDEZF1XMaFJWJjbV0XVOLaPtgEP2JZxGGW8Ou0+V0+5216Lwyzgm7MSI7VGZxBUSfiut/Ynz560wrAUOJzCpx6S/WjshscQYtMvmq8VdHbIlJOcXqjkSrxiByHZRBzYCZ10dHTrCTtiLeWJ+7O5AKXrxkPh/roB/J+zjpgzIAncAAAAASUVORK5CYII=" />
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link" target="_blank">
+							<svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+								<image id="facebook" width="35" height="35"
+									xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAACh0lEQVRYhdWYy2sTURSHvxmmj1h80FI3RRDE4MKNFEW6sEKLRARJcCFk35WrugtYyEazEfIHdJ+dJAsXRegiBbMQihtX3ehGQSOK1Vqb2hm5nTNJZjI2d8Y86g8GcmfuvefLfZ1zrkFEOaX0KDAHzAJJYBpQ7xpAHdgCNoGaka00ovSuDeOU0jeAJSADTGg02QHKwKqRrWz0BMYppa8ARWBeizpcVWDZyFZex4JxSmkLyAM5wPwHEE82UFB9GtnKb20Yp5Q+DTwDFnoAEdQ6cM/IVr51hRGQF8C1PoB4egXcCgL5YGRq1mKNiGmBNdYq7/8C5+CoFmqEUu1TZgUq5COBjJ2Ey/fh3HVITAVMrcCnN0e1XhB7j5r/x/shuyanDTJyAhYLkLzTCaKvnNj1w8j21d81l+7CqZm4EO32iz4YOdCinSMzVzvf7W3DTt19bO3Dd17sN9fMUiQQpYmz/vKPj/D8QbdF+zcp+xum+JpM5OZGYEZ/fo4LopRRHKY4PR1f008p+3OWeF89JSbh5opb1Ur4m0xegNvFVvnlU9h+H4V/1pIwQE/qYDtzPryqNe7/tr8bdSCTpsQjvddeh+vppmlTAqPeSm1xO/JiHrUkQtPT7hdYe+hWXXziTo2n7x/cdaJkh0YI3dSwJFTUkzLy9a1b1bH9TQ4arW/xVDclZj0O2jIleD4O2lQwNQmehyllv2ZKOlEeMkxZcXgOZnXIMIf2D2Ekr6kOCaTq5VXtrndZ0olByha7+GAkwSoMGKbQntgFw8y8RO2D0LrYayp+3nQxBeZIq6wc4zutlBqtvCkANPCMMjQbkIop4HEPF7Ut/aXCQPhvbiFCoIZ/PxMC1Z+bK+AP7xbM56pwpVoAAAAASUVORK5CYII=" />
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="#" class="social__link" target="_blank">
+							<svg class="social__icon" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+								<image id="instagram" width="35" height="35"
+									xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAADm0lEQVRYhdWYUWjXVRTHP79//14yYyNyCZPKbBQyxIYiLNgWCI4E71PE7yEoGAxTfFHYg/RiD2L2IGUIox58uPgi+wkOih5WkAqOirJexlqLoplGWyIuUHfljPPT3+5+d/vdzT/U9+XCPeee+/2de+455/4SIuGs6QB6gG1AG9AMNAEzwDQwBowCI0mafRNjvRIZZ83jwF6gD9gUYX8cGAQ+TtLs5qrIOGseAfqB9/TrVwrx2mHgVJJmd6PJOGtagTNA5ypI+LgAvJGk2e+VyThrtgKfAeseIpEc14BdSZp9tywZJfIl8EQDiOS4AXT7hBaQ0aORG9AIj/gQD3UUj+w+GQ3WrwIxIgtPAF8A1yM2fArYCRwIHLnEUFce1PWCoD9A5GtgT5Jmf0eQyDEpOcdZcwo4B7ziyTt135PkntE88lvJ9Z0CNidpNu2seRZ4B3geqFUgMgf8LBslaTbprJHk+BOw3tOTa79B8lDumb2BPHJciWwELgNPRnjlT+Bl4C1nzfYkzSacNceBDzy9Jt3/WP6FfQGDn+t4MJLIP8CLWi7+0vVFez7m969rrQml+CkdXyiR3QFOA+dVT9y/G3izRDdfP1UiE2wSHnUteiHM6fyjnlyu42tJmv3gzQ85a+TWDWvB/FfiAbiq8jnC6Klr9Y3BbaA3SbMfnTWPAW/rccjmnwpBZ00v8G3JRyyFbTU1FINPlMga4CLwIbBfx4syL3LRi7TbVtN+JAZDqiv5YYu3bovOU9CriubaClqDP3RsD8jbPb2qaKpp0olBi+qOBdbk8y1xZpmpaasYg17VlRQ/4a2b0HkKelUxXVviC0Pod9Y8p7VqB3AEOKvd4A6ZF3khdqpirK7N8+sRi+QWDcv1TdLsV+DdotBZ84zmmTWRZEaFzEgFRb9vfQm44qw5qdVYktrTUt21mK5dZn0ZRmr6nBgPKORB6McGuuEAcAn4RceBEiLF9aGgHhceeaEcDCi9qqOk+NkKX1eGWV1ftOdjfv/l+hn5ovYkzW45ayShHQJaI4hIDXs/SbPvtXRcATZ6Ovf7mWLbKWf9UYlBiYlUCMU55AGUiNWY8rEvSbMHnR7L98By/Y9qDzy11EPMs7dee+CBQA1c0AP/p14HC3pZFezSd00jcUMfcgtelosaa31YdSvzRnlk0QOulEyBUIee6cPEBT2aRUSCZJSQuLBLon0Fld3HjNrpCj36+V/9nwkQa8yfK+Ae3B0zTdbguBcAAAAASUVORK5CYII=" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- MODAL MENU -->
+	<!-- --------------------------------------------------------------- -->
+	<!-- MODAL ORDER -->
+	<div class="modal modal-order">
+		<div class="modal__wrapper">
+			<div class="modal__content">
+				<button class="btn-close modal__btn-close"></button>
+				<h2 class="title modal__title">Заполните форму</h2>
+				<p class="modal__subtitle modal__subtitle--order">Мы привезем вам горячую пиццу за 50 минут</p>
+				<div class="order">
+					<img src="img/section-catalog/1.png" alt="Pizza" class="order__img">
+					<h3 class="order__title">
+						<span class="order-product-title">Салями</span>
+						<span class="order-product-price">850</span> &#8381;
+					</h3>
+					<p class="order__size">35 см</p>
+					<form class="form">
+						<input class="order-info-title" type="hidden" name="пицца">
+						<input class="order-info-price" type="hidden" name="цена">
+						<input class="order-info-size" type="hidden" name="размер">
+						<input class="form__input" type="text" name="имя" placeholder="Имя" required>
+						<input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
+						<input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
+						<select class="form__input" name="оплата">
+							<option value="Оплата наличными">Оплата наличными</option>
+							<option value="Оплата картой">Оплата картой</option>
+						</select>
+						<button class="btn form__btn" type="submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- MODAL ORDER -->
+	<!-- --------------------------------------------------------------- -->
+	<!-- MODAL THANKS -->
+	<div class="modal modal-thanks">
+		<div class="modal__wrapper">
+			<div class="modal__content">
+				<button class="btn-close modal__btn-close"></button>
+				<h2 class="title modal__title">Успешно отправлено</h2>
+				<p class="modal__subtitle">Мы уже начали готовить вашу пиццу</p>
+			</div>
+		</div>
+	</div>
+	<!-- MODAL THANKS -->
+	<!-- --------------------------------------------------------------- -->
+	<!-- MODAL ERROR -->
+	<div class="modal modal-error">
+		<div class="modal__wrapper">
+			<div class="modal__content">
+				<button class="btn-close modal__btn-close"></button>
+				<h2 class="title modal__title modal__title--error">Произошла ошибка</h2>
+				<p class="modal__subtitle">Пожалуста зделайте заказ по номеру <a class="error__phone"
+						href="tel:+79999999999">+7 (999)
+						999-99-99</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- MODAL ERROR -->
+
+
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
